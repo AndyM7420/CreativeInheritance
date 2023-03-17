@@ -6,9 +6,10 @@ public class Science extends School{
     public boolean isAP(){
         String specific= super.getSpecificClass();
         for(int i=0;i<super.classes[1].length;i++){
-        String each=Classes[1][i];
-            if(specific.contains("AP")){
+        String each=classes[1][i];
+            if(specific.contains("AP")&&each.equals(specific)){
             return true;
         }
-    }}
+    }
+    return false;}
 }
